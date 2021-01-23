@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::GET('/','App\Http\Controllers\VisitsController@home');
+Route::get('/', function () {
+    return view('welcome');
+});
