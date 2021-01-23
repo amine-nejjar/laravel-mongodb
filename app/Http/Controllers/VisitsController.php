@@ -12,7 +12,7 @@ class VisitsController extends Controller
     {
         $visit=new Visits();
         $visit->datetime = date('Y-m-d H:i:s');
-        $visit->ip = \Request::ip();
+        $visit->ip = \Request::getClientIp();
         $visit->save();     
         echo '<h1 style="text-align:center;">your information have been saved !</h1>';
     }
