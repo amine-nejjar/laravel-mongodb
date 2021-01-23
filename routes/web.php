@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo '<h1 style="text-align:center;">welcome ! try accessing show and save methods.</h1>';
 });
