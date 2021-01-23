@@ -14,7 +14,7 @@ class VisitsController extends Controller
         $visit->datetime = date('Y-m-d H:i:s');
         $visit->ip = \Request::ip();
         $visit->save();     
-        echo '<h1>your information have been saved !!</h1>';
+        echo '<h1>your information have been saved !</h1>';
     }
     public function show()
     {
