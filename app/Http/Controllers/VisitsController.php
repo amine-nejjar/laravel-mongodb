@@ -24,4 +24,7 @@ class VisitsController extends Controller
         }
         return response()->json($visits);
     }
+    public function home(){
+        echo '<h1 style="text-align:center;">welcome ! try accessing show and save methods.</h1>';
+    }
 }

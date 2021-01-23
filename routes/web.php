@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    echo '<h1 style="text-align:center;">welcome ! try accessing show and save methods.</h1>';
-});
+
+Route::GET('/','App\Http\Controllers\VisitsController@home');
