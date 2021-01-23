@@ -16,5 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::GET('save','App\Http\Controllers\VisitsController@save');
-Route::GET('show','App\Http\Controllers\VisitsController@show');
